@@ -35,9 +35,25 @@ A Pascal-like language with Delphi-style OO: classes, constructors/destructors, 
    ```
    This compiles and runs `tests\test1_class_basic.pas` (output: `11`).
 
-   To run another test:
+   To run test 2:
    ```powershell
    .\build.ps1 tests\test2_ctor_dtor.pas
+   ```
+   To run test 3:
+   ```powershell
+   .\build.ps1 tests\test3_encapsulation_fail.pas
+   ```
+   To run test 4:
+   ```powershell
+   .\build.ps1 tests\test4_io.pas
+   ```
+   To run test 5:
+   ```powershell
+   .\build.ps1 tests\test5_inheritance.pas
+   ```
+   To run test 6:
+   ```powershell
+   .\build.ps1 tests\test6_interface.pas
    ```
 
    On cmd use `build.bat` the same way.

@@ -75,6 +75,21 @@ A Pascal-like language with Delphi-style OO: classes, constructors/destructors, 
    ```bash
    java -cp "out:antlr-4.13.2-complete.jar" Main tests/test1_class_basic.pas
    ```
+   ```bash
+   java -cp "out:antlr-4.13.2-complete.jar" Main tests/test2_ctor_dtor.pas
+   ```
+   ```bash
+   java -cp "out:antlr-4.13.2-complete.jar" Main tests/test3_encapsulation_fail.pas
+   ```
+   ```bash
+   java -cp "out:antlr-4.13.2-complete.jar" Main tests/test4_io.pas
+   ```
+   ```bash
+   java -cp "out:antlr-4.13.2-complete.jar" Main tests/test5_inheritance.pas
+   ```
+   ```bash
+   java -cp "out:antlr-4.13.2-complete.jar" Main tests/test6_interface.pas
+   ```
 
 ## Test Cases
 

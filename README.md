@@ -13,14 +13,14 @@ A Pascal-like language with Delphi-style OO: classes, constructors/destructors, 
 
 ## Requirements
 
-- **Java 11+** (tested with Java 17 and 25)
+- **Java 11+** (tested with Java 25)
 - **ANTLR 4** – use the complete JAR (e.g. `antlr-4.13.2-complete.jar`) in the project root
 
 ## How to Run
 
 ### Option A: Windows (PowerShell or cmd)
 
-1. **Regenerate parser** (if you changed the grammar):
+1. **Regenerate parser**:
    ```powershell
    .\regen.ps1
    ```
@@ -71,21 +71,10 @@ A Pascal-like language with Delphi-style OO: classes, constructors/destructors, 
 | `tests/test5_inheritance.pas` | Inheritance: TAnimal, TDog extends TAnimal; writeln (expect 10, 30, 20, 40, 1, 2) |
 | `tests/test6_interface.pas` | Interface IPrintable; class implements; readln + writeln; assign to interface variable |
 
-## What to Turn In (ZIP)
-
-Include in your `.zip`:
-
-- `delphi.g4` – grammar
-- `src/` – all Java source (Main.java, DelphiInterpreter.java, ClassDef.java, InterfaceDef.java, Frame.java, ObjectInstance.java, RuntimeEnv.java, Value.java)
-- `gen/` – generated parser/lexer/visitor (run `.\regen.ps1` after grammar changes so TAs can compile)
-- `tests/` – test1_class_basic.pas through test6_interface.pas
-- `antlr-4.13.2-complete.jar` – ANTLR runtime (required to compile and run)
-- `README.md` – this file
-- Optional: `build.ps1`, `build.bat`, `regen.ps1` for easier TA use on Windows
 
 Exclude: `out/` (compiled classes), `.cursor/`, IDE files.
 
-## Steps for TAs
+## Steps for running:
 
 1. Unzip the archive.
 2. Ensure Java 11+ is installed and `antlr-4.13.2-complete.jar` is in the project root.

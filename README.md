@@ -103,7 +103,6 @@ A Pascal-like language with Delphi-style OO: classes, constructors/destructors, 
 | `tests/test6_interface.pas` | Interface IPrintable; class implements; readln + writeln; assign to interface variable |
 
 
-Exclude: `out/` (compiled classes), `.cursor/`, IDE files.
 
 ## Steps for running:
 
